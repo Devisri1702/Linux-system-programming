@@ -27,6 +27,9 @@ int main(){
 		printf("malloc %d: %p\n",i+1,p);
 
 	}
+	for(int i=0;i<4;i++)
+	free(p[i]);
+	
 	//Stack growth
 	printf("\n---Part C: Stack\n");
 	recurse(1);
