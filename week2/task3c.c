@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<unistd.h>
 int x=10;//DATA SEC
 int y;//BSS
 int main(){
@@ -11,7 +12,7 @@ int main(){
 	printf("bss sec: %p\n",&y);
 	printf("heap:%p\n",p);
 	printf("Stack sec: %p\n",&l);
-printf("\npaused. Run the tools in another terminal.\Press Enter to exit.\n");
+printf("\npaused. Run the tools in another terminal.\nPress Enter to exit.\n");
 getchar();
 free(p);
 return 0;
